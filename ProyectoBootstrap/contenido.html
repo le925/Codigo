@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Web | Contenido</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Tecnologías Web
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contenido.html">Contenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="bg-success text-white py-5">
+        <div class="container">
+            <h1>Contenido del curso</h1>
+            <p class="lead mb-0">
+                Conoce a detalle el temario y los objetivos de cada tecnología para desarrollar sitios web modernos.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container py-5">
+
+        <!-- Alert -->
+        <div class="alert alert-info shadow-sm mb-4" role="alert">
+            <strong>Importante:</strong>
+            Este temario está diseñado siguiendo los estándares de desarrollo con Bootstrap 5, buenas prácticas de SEO y accesibilidad web.
+        </div>
+
+        <!-- Accordion -->
+        <h2 class="mb-4">
+            Tecnologías principales
+        </h2>
+
+        <div class="accordion shadow-sm" id="acordeonTecnologias">
+
+            <!-- SECCIÓN 1: HTML5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#html">
+                        <span class="badge bg-primary me-2">Módulo 1</span> HTML5 - Estructura y Semántica Web
+                    </button>
+                </h2>
+
+                <div id="html"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#acordeonTecnologias">
+
+                    <div class="accordion-body">
+                        <p>
+                            <strong>HTML5</strong> es el lenguaje fundamental sobre el que se construye toda la web. Permite estructurar correctamente el contenido de una página utilizando etiquetas semánticas que facilitan la lectura del sitio tanto a navegadores como a motores de búsqueda (SEO) y lectores de pantalla.
+                        </p>
+
+                        <hr>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <h5 class="h6 fw-bold">Temas principales del módulo:</h5>
+                                <ul class="text-muted small">
+                                    <li>Estructura básica de un documento HTML5 (<code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>).</li>
+                                    <li>Etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> y <code>&lt;footer&gt;</code>.</li>
+                                    <li>Manejo de elementos de texto, enlaces, imágenes y listas.</li>
+                                    <li>Creación de formularios web accesibles y validación nativa de campos.</li>
+                                    <li>Inserción de contenido multimedia (audio y video HTML5).</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded">
+                                    <h5 class="h6 fw-bold mb-2">Detalles del nivel:</h5>
+                                    <p class="small mb-1"><strong>Nivel:</strong> Básico / Principiante</p>
+                                    <p class="small mb-1"><strong>Duración estimada:</strong> 12 horas de estudio</p>
+                                    <p class="small mb-0"><strong>Proyecto práctico:</strong> Estructurar el maquetado completo de un portal de noticias o blog personal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SECCIÓN 2: CSS Y BOOTSTRAP -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#css">
+                        <span class="badge bg-success me-2">Módulo 2</span> CSS3 y Bootstrap 5 - Estilos y Diseño Responsive
+                    </button>
+                </h2>
+
+                <div id="css"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#acordeonTecnologias">
+
+                    <div class="accordion-body">
+                        <p>
+                            <strong>CSS3 y Bootstrap 5</strong> te permiten darle estilo, color y un aspecto profesional a tus maquetas HTML. Con Bootstrap, puedes acelerar el proceso de desarrollo utilizando un sistema de rejillas adaptable y componentes listos para usar en móviles, tablets y computadoras.
+                        </p>
+
+                        <hr>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <h5 class="h6 fw-bold">Temas principales del módulo:</h5>
+                                <ul class="text-muted small">
+                                    <li>Fundamentos de CSS: selectores, modelo de caja (*box model*) y especificidad.</li>
+                                    <li>Diseños flexibles y adaptables con <strong>Flexbox</strong> y <strong>CSS Grid</strong>.</li>
+                                    <li>Sistema de rejilla (*Grid System*) de Bootstrap de 12 columnas.</li>
+                                    <li>Uso de clases de utilidad de Bootstrap (márgenes, rellenos, colores, alineación).</li>
+                                    <li>Componentes de interfaz: Navbars, Cards, Modales, Acordeones y Botones.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded">
+                                    <h5 class="h6 fw-bold mb-2">Detalles del nivel:</h5>
+                                    <p class="small mb-1"><strong>Nivel:</strong> Intermedio</p>
+                                    <p class="small mb-1"><strong>Duración estimada:</strong> 18 horas de estudio</p>
+                                    <p class="small mb-0"><strong>Proyecto práctico:</strong> Diseñar una tienda en línea (*e-commerce*) totalmente adaptable a celulares.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SECCIÓN 3: JAVASCRIPT -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#js">
+                        <span class="badge bg-warning text-dark me-2">Módulo 3</span> JavaScript Moderno (ES6+) - Lógica e Interactividad
+                    </button>
+                </h2>
+
+                <div id="js"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#acordeonTecnologias">
+
+                    <div class="accordion-body">
+                        <p>
+                            <strong>JavaScript</strong> es el lenguaje de programación que añade interactividad y dinamismo a tus páginas web. Te permite responder a las acciones del usuario, validar datos en tiempo real y conectarte con servidores o APIs externas para actualizar contenido sin recargar la página.
+                        </p>
+
+                        <hr>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <h5 class="h6 fw-bold">Temas principales del módulo:</h5>
+                                <ul class="text-muted small">
+                                    <li>Sintaxis moderna: variables (<code>let</code>, <code>const</code>), tipos de datos y estructuras de control.</li>
+                                    <li>Manipulación del DOM (Document Object Model) para modificar contenido y estilos dinámicamente.</li>
+                                    <li>Escucha de eventos (clicks, envíos de formulario, tecleo).</li>
+                                    <li>Funciones tradicionales y *Arrow Functions*.</li>
+                                    <li>Consumo de datos asíncronos mediante <code>fetch()</code> y Promises.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="bg-light p-3 rounded">
+                                    <h5 class="h6 fw-bold mb-2">Detalles del nivel:</h5>
+                                    <p class="small mb-1"><strong>Nivel:</strong> Avanzado</p>
+                                    <p class="small mb-1"><strong>Duración estimada:</strong> 25 horas de estudio</p>
+                                    <p class="small mb-0"><strong>Proyecto práctico:</strong> Desarrollar una aplicación web interactiva que consuma datos reales de clima o películas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="contacto.html" class="btn btn-success btn-lg">
+                Ir al formulario de contacto
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <small>
+                © 2026 Tecnologías Web - Proyecto Académico
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

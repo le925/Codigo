@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Web | Contacto</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (para iconos visuales) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Tecnologías Web
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contenido.html">Contenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO -->
+    <header class="bg-primary text-white py-5">
+        <div class="container">
+            <h1 class="fw-bold">Contáctanos</h1>
+            <p class="lead mb-0">
+                ¿Tienes dudas sobre los cursos o el proyecto? Escríbenos y te responderemos a la brevedad.
+            </p>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-5">
+        <div class="row g-4">
+
+            <!-- TARJETAS DE INFORMACIÓN -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm h-100 p-3 bg-white">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold text-primary mb-4">Información de Contacto</h4>
+                        
+                        <!-- Ítem 1: Correo -->
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="bg-primary bg-opacity-10 text-primary p-3 rounded-circle me-3">
+                                <i class="bi bi-envelope-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Correo Electrónico</h6>
+                                <p class="text-muted small mb-0">xxxxxx@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Ítem 2: Teléfono -->
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="bg-success bg-opacity-10 text-success p-3 rounded-circle me-3">
+                                <i class="bi bi-telephone-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Atención Telefónica</h6>
+                                <p class="text-muted small mb-0">+593 xxxxxxxx</p>
+                            </div>
+                        </div>
+
+                        <!-- Ítem 3: Ubicación -->
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="bg-warning bg-opacity-10 text-dark p-3 rounded-circle me-3">
+                                <i class="bi bi-geo-alt-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Ubicación</h6>
+                                <p class="text-muted small mb-0">Euador-Pichincha-Quito-Cayambe</p>
+                            </div>
+                        </div>
+
+                        <!-- Ítem 4: Horarios -->
+                        <div class="d-flex align-items-start">
+                            <div class="bg-info bg-opacity-10 text-info p-3 rounded-circle me-3">
+                                <i class="bi bi-clock-fill fs-4"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Horario de Atención</h6>
+                                <p class="text-muted small mb-0">Lunes a Viernes: 08:00 - 17:00 hrs</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--  FORMULARIO  -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm p-4 bg-white">
+                    <div class="card-body">
+                        <h3 class="fw-bold mb-3">Envíanos un mensaje</h3>
+                        <p class="text-muted mb-4 small">Todos los campos marcados con (*) son obligatorios.</p>
+
+                        <form>
+                            <div class="row g-3">
+                                <!-- Nombre -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label fw-semibold">Nombre completo *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Juan Pérez" required>
+                                    </div>
+                                </div>
+
+                                <!-- Correo -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="correo" class="form-label fw-semibold">Correo electrónico *</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tema -->
+                            <div class="mb-3">
+                                <label for="tema" class="form-label fw-semibold">Tema de consulta *</label>
+                                <select class="form-select" id="tema" required>
+                                    <option value="" selected disabled>Seleccione una tecnología o tema</option>
+                                    <option value="html">Módulo HTML5</option>
+                                    <option value="css">Módulo CSS3 y Bootstrap 5</option>
+                                    <option value="js">Módulo JavaScript (ES6+)</option>
+                                    <option value="general">Consulta general sobre el proyecto</option>
+                                </select>
+                            </div>
+
+                            <!-- Mensaje -->
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label fw-semibold">Mensaje *</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escriba aquí los detalles de su mensaje..." required></textarea>
+                            </div>
+
+                            <!-- Checkbox de Políticas -->
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="politicas" required>
+                                <label class="form-check-label small text-muted" for="politicas">
+                                    Acepto los términos y condiciones de privacidad de la plataforma.
+                                </label>
+                            </div>
+
+                            <!-- Botón de Envío -->
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">
+                                <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-light py-3 border-top">
+        <div class="container text-center">
+            <small>© 2026 Tecnologías Web - Proyecto Académico</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
